@@ -5,7 +5,7 @@ import './OrderComp.css'; // Import CSS file for styling
 const OrderDetails = ({ trainNumber, trainName, passengerName, passengerAge, fromStation, toStation }) => {
     return (
         <div className="train-details-container">
-            <h2>Train Details</h2>
+            <h2>Ticket Details</h2>
             <div className="train-details">
                 <div className="detail">
                     <span>Train Number:</span>

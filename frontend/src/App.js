@@ -11,9 +11,11 @@ import BookingForm from './components/Users/BookTicket';
 import Orders from './components/Users/Orders';
 import StationAdmin from './components/Admin/StationAdmin';
 import AddTrain from './components/Admin/AddTrain';
+import Home from './components/Home';
 const App = () => {
   return (
     <Routes>
+      <Route path="/" Component={Home} />
       <Route path="/login" Component={Login} />
       <Route path="/signup" Component={Signup} />
       <Route path="/user" Component={UserHome} />
