@@ -1,0 +1,53 @@
+orders
+
+CREATE TABLE `trains` (
+  `trainID` int NOT NULL AUTO_INCREMENT,
+  `trainNumber` varchar(45) NOT NULL,
+  `trainName` varchar(45) NOT NULL,
+  `fromStation` varchar(45) NOT NULL,
+  `toStation` varchar(45) NOT NULL,
+  `arivaltime` varchar(45) NOT NULL,
+  `departuretime` varchar(45) NOT NULL,
+  `seatAvl` int NOT NULL,
+  `adminID` int DEFAULT NULL,
+  PRIMARY KEY (`trainID`),
+  UNIQUE KEY `trainNumber_UNIQUE` (`trainNumber`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+stations :
+
+CREATE TABLE `stations` (
+  `stationID` int NOT NULL AUTO_INCREMENT,
+  `stationName` varchar(45) NOT NULL,
+  `adminId` int DEFAULT NULL,
+  PRIMARY KEY (`stationID`),
+  UNIQUE KEY `stationName_UNIQUE` (`stationName`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+trains:
+
+CREATE TABLE `trains` (
+  `trainID` int NOT NULL AUTO_INCREMENT,
+  `trainNumber` varchar(45) NOT NULL,
+  `trainName` varchar(45) NOT NULL,
+  `fromStation` varchar(45) NOT NULL,
+  `toStation` varchar(45) NOT NULL,
+  `arivaltime` varchar(45) NOT NULL,
+  `departuretime` varchar(45) NOT NULL,
+  `seatAvl` int NOT NULL,
+  `adminID` int DEFAULT NULL,
+  PRIMARY KEY (`trainID`),
+  UNIQUE KEY `trainNumber_UNIQUE` (`trainNumber`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+userdata
+
+CREATE TABLE `userdata` (
+  `userID` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) NOT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `isAdmin` tinyint NOT NULL,
+  PRIMARY KEY (`userID`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
