@@ -7,7 +7,7 @@ import '../App.css';
 
 const Signup = () => {
     const navigate = useNavigate();
-    const [role, setRole] = useState('user');
+    const [role, setRole] = useState('User');
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const handleRoleChange = (event) => {
@@ -46,8 +46,8 @@ const Signup = () => {
                 <div className="form-group">
                     <label htmlFor="role">Select Role:</label>
                     <select id="role" value={role} onChange={handleRoleChange}>
-                        <option value="user">User</option>
-                        <option value="admin">Admin</option>
+                        <option value="User">User</option>
+                        <option value="Admin">Admin</option>
                     </select>
                 </div>
                 <input type="email" placeholder="Email" value={email} required onChange={(e) => { setemail(e.target.value) }} />
