@@ -69,7 +69,7 @@ const Orders = () => {
                         passengerName={item.passengerName}
                         passengerAge={item.passengerAge}
                         fromStation={item.fromStation}
-                        toStation={item.to}
+                        toStation={item.toStation}
                     />
                 })}
             </div>
