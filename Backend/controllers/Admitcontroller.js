@@ -84,7 +84,7 @@ export const Addtrain = async (req, resp) => {
             else {
                 database.query("select * from trains", (err, result1) => {
                     let arr = [];
-                    arr = [...result1, req.body];
+                    arr = [...result1];
                     resp.status(200).send({
                         success: true,
                         result: arr
