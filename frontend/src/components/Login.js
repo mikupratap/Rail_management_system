@@ -8,7 +8,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
-    const [role, setRole] = useState('user');
+    const [role, setRole] = useState('User');
     const handleRoleChange = (event) => {
         setRole(event.target.value);
     };
